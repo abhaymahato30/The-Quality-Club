@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body, html {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 @keyframes zoom {
     0% {
       transform: scale(1);
@@ -93,3 +98,115 @@
     }
   }
   
+
+
+
+
+
+
+
+
+
+
+  /* pointer animations */
+ /* Disable default pointer (hide the arrow cursor) */
+
+/* Apply cursor-none globally to hide default cursor */
+body, html {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Custom cursor (comet head) style */
+.custom-pointer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 153, 255, 1); /* Bright blue comet core */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.8), 0 0 20px rgba(0, 153, 255, 0.6), 0 0 30px rgba(0, 153, 255, 0.4); /* Glowing effect */
+  transition: transform 0.15s ease; /* Smooth cursor movement */
+}
+
+/* Comet tail (particles) style */
+.comet-tail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: rgba(0, 153, 255, 0.6); /* Tail in light blue */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  animation: trailAnimation 1s ease-out forwards; /* Tail animation */
+}
+
+/* Keyframes for comet tail animation */
+@keyframes trailAnimation {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 153, 255, 0.6), 0 0 15px rgba(0, 153, 255, 0.5);
+  }
+  100% {
+    transform: scale(0.5) translate(-50%, -50%);
+    opacity: 0;
+    box-shadow: 0 0 25px rgba(0, 153, 255, 0.4), 0 0 40px rgba(0, 153, 255, 0.2);
+  }
+}
+
+
+
+
+
+/* card animations */
+/* Comet border animation */
+@keyframes cometBorder {
+  0% {
+    border-top-color: rgba(0, 153, 255, 1);
+    border-right-color: rgba(0, 153, 255, 0.6);
+    border-bottom-color: rgba(0, 153, 255, 0.3);
+    border-left-color: rgba(0, 153, 255, 0.6);
+  }
+  25% {
+    border-top-color: rgba(0, 153, 255, 0.6);
+    border-right-color: rgba(0, 153, 255, 1);
+    border-bottom-color: rgba(0, 153, 255, 0.3);
+    border-left-color: rgba(0, 153, 255, 0.6);
+  }
+  50% {
+    border-top-color: rgba(0, 153, 255, 0.3);
+    border-right-color: rgba(0, 153, 255, 0.6);
+    border-bottom-color: rgba(0, 153, 255, 1);
+    border-left-color: rgba(0, 153, 255, 0.6);
+  }
+  75% {
+    border-top-color: rgba(0, 153, 255, 0.6);
+    border-right-color: rgba(0, 153, 255, 0.3);
+    border-bottom-color: rgba(0, 153, 255, 0.6);
+    border-left-color: rgba(0, 153, 255, 1);
+  }
+  100% {
+    border-top-color: rgba(0, 153, 255, 1);
+    border-right-color: rgba(0, 153, 255, 0.6);
+    border-bottom-color: rgba(0, 153, 255, 0.3);
+    border-left-color: rgba(0, 153, 255, 0.6);
+  }
+}
+
+/* Apply the comet border animation to each card */
+.card-with-comet-border {
+  border: 2px solid rgba(0, 153, 255, 0.6);
+  position: relative;
+  animation: cometBorder 2s linear infinite;
+  padding: 1rem;
+  border-radius: 8px;
+}

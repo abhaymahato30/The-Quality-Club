@@ -5,7 +5,7 @@ import praksah from "../assets/images/Team/prakash.jpg";
 import kashif from "../assets/images/Team/kashif.jpg";
 import Ghanshyam from "../assets/images/Team/ghanshyam.jpg";
 
-// Adding image URLs for each advisory committee member (replace with actual URLs or image imports)
+// Advisory committee data
 const advisoryCommittee = [
   {
     name: "Prof (Dr.) Ghanshyam",
@@ -46,7 +46,7 @@ const Team = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Mentor at the top center */}
           <div className="col-span-1 lg:col-span-3 flex justify-center">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform hover:opacity-90">
+            <div className="card-with-comet-border p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform hover:opacity-90">
               <div className="mb-6 flex justify-center">
                 <img
                   src={advisoryCommittee[0].image}
@@ -64,7 +64,7 @@ const Team = () => {
             {advisoryCommittee.slice(1).map((member, index) => (
               <div
                 key={index}
-                className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform hover:opacity-90"
+                className="card-with-comet-border p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform hover:opacity-90"
               >
                 <div className="mb-4 flex justify-center">
                   <img

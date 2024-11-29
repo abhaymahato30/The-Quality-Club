@@ -7,10 +7,12 @@ import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import VisionPage from "./components/Vision";
+import Pointer from "./components/Pointer";
 
 const App = () => {
   return (
     <div>
+      <Pointer/>
       <Navbar />
       <Hero/>
       <About />
