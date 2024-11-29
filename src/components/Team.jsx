@@ -42,7 +42,7 @@ const Team = () => {
       data-aos="fade-up"
     >
       <div className="max-w-7xl mx-auto text-center text-white">
-        <h2 className="text-3xl font-bold mb-8">Advisory Committee</h2>
+        <h2 className="heading-underline text-5xl font-bold mb-8">Advisory Committee</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Mentor at the top center */}
           <div className="col-span-1 lg:col-span-3 flex justify-center">
@@ -60,7 +60,7 @@ const Team = () => {
           </div>
 
           {/* Other members in a single row */}
-          <div className="col-span-1 lg:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-4 gap-6">
             {advisoryCommittee.slice(1).map((member, index) => (
               <div
                 key={index}

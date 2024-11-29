@@ -124,8 +124,8 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: rgba(0, 153, 255, 1); /* Bright blue comet core */
   border-radius: 50%;
   pointer-events: none;
@@ -209,4 +209,31 @@ body, html {
   animation: cometBorder 2s linear infinite;
   padding: 1rem;
   border-radius: 8px;
+}
+
+.heading-underline {
+  position: relative;
+  display: inline-block;
+  color: white; /* Adjust text color */
+}
+
+.heading-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px; /* Thickness of the underline */
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 119, 255, 0) 0%, rgba(0, 119, 255, 1) 50%, rgba(0, 119, 255, 0) 100%);
+  background-size: 200% 100%;
+  animation: comet-slide 2s infinite linear;
+}
+
+@keyframes comet-slide {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }

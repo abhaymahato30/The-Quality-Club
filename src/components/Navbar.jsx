@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaUser, FaTasks, FaUsers, FaEnvelope } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaUser,
+  FaTasks,
+  FaUsers,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +31,9 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 items-center">
+          <li className="flex items-center text-white text-lg font-medium hover:text-blue-600 transition duration-300">
+            <FaHome className="mr-2" /> <a href="#home">Home</a>
+          </li>
           <li className="flex items-center text-white text-lg font-medium hover:text-blue-600 transition duration-300">
             <FaUser className="mr-2" /> <a href="#about">About</a>
           </li>
@@ -49,6 +60,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden flex flex-col space-y-6 p-4 bg-gray-800 shadow-lg">
+          <li className="flex items-center text-white text-lg font-medium hover:text-blue-600 transition duration-300">
+            <FaHome className="mr-2" /> <a href="#home">Home</a>
+          </li>
           <li className="flex items-center text-white text-lg font-medium hover:text-blue-600 transition duration-300">
             <FaUser className="mr-2" /> <a href="#about">About</a>
           </li>

@@ -5,12 +5,12 @@ const AboutPage = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center text-center"
+      className="relative h-5/6 md:min-h-screen flex items-center justify-center text-center"
     >
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
-          className="w-full h-full object-cover"
+          className="w-full  h-full object-cover"
           src={video1} // Replace with your video URL
           autoPlay
           loop
@@ -23,7 +23,7 @@ const AboutPage = () => {
 
       {/* Content */}
       <div className="max-w-3xl px-4 z-20 relative">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white">
+        <h2 className=" heading-underline text-4xl md:text-5xl font-extrabold text-white">
           About Us
         </h2>
         <p className="mt-6 text-white text-lg md:text-xl leading-relaxed">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-black h-screen flex flex-col md:flex-row items-center justify-center">
+    <section  id="home" className="relative bg-black h-screen flex flex-col md:flex-row items-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full">
         {/* Left Section: Video */}
         <div className="relative h-full w-full order-1 md:order-2 flex justify-center items-center">
@@ -16,7 +16,7 @@ const Hero = () => {
             playsInline
           ></video>
           {/* Overlay for Contrast */}
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute inset-0 bg-black opacity-20"></div>
         </div>
 
         {/* Right Section: Text */}
