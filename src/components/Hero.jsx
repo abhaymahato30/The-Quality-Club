@@ -17,7 +17,7 @@ const Hero = () => {
       ></video>
 
       {/* Overlay for contrast */}
-      <div className="absolute inset-0 bg-black opacity-80"></div>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Content on top of the video */}
       <div className="relative z-10 text-left p-8 md:p-16 max-w-lg">
