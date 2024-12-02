@@ -9,24 +9,14 @@ const activities = [
       "Organizing quality circles to address specific issues and promote team-based problem solving using Kaizen boards to drive continuous improvement initiatives.",
     icon: <FaCogs size={40} className="text-gray-200" />, // Icon for Quality Circles
   },
-  {
-    title: "Guest Lectures and Training",
-    description:
-      "Hosting industry experts to share insights and best practices.",
-    icon: <FaRegHandshake size={40} className="text-gray-200" />, // Icon for Guest Lectures
-  },
+  
   {
     title: "Safety and Quality Audits",
     description:
       "Conducting regular audits to ensure safety and quality standards are met in the colleges.",
     icon: <FaClipboardList size={40} className="text-gray-200" />, // Icon for Audits
   },
-  {
-    title: "Checklist Preparation",
-    description:
-      "Ensuring consistency, preventing errors, and enhancing accountability in processes in colleges.",
-    icon: <FaFileAlt size={40} className="text-gray-200" />, // Icon for Checklist Preparation
-  },
+  
   {
     title: "Quality Tools and Techniques",
     description:
@@ -51,18 +41,8 @@ const activities = [
       "Designing and delivering electives and courses for students as part of the curriculum.",
     icon: <FaFileAlt size={40} className="text-gray-200" />, // Icon for Curriculum
   },
-  {
-    title: "Six Sigma and Lean Manufacturing",
-    description:
-      "Proposals to take forward Six Sigma and Lean Manufacturing techniques.",
-    icon: <FaCogs size={40} className="text-gray-200" />, // Icon for Six Sigma and Lean Manufacturing
-  },
-  {
-    title: "Balanced Scorecard",
-    description:
-      "Implementing and tracking organizational performance using the Balanced Scorecard approach.",
-    icon: <FaChartLine size={40} className="text-gray-200" />, // Icon for Balanced Scorecard
-  },
+ 
+ 
   {
     title: "Total Quality Management (TQM) Pillars",
     description:

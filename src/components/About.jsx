@@ -19,7 +19,7 @@ const AboutPage = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-90 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
       {/* Content */}
       <div className="max-w-3xl px-4 z-20 relative">
